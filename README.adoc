@@ -1,0 +1,30 @@
+= Automatic External Air Assist for 3018 CNCs
+
+Some 3018 CNCs have a 12 V pin on the main board that can be used to control an air assist, such as https://www.sainsmart.com/collections/genmitsu-laser-upgrade-parts/products/genmitsu-air-assist-pump-kit-for-laser-engraver[this one].
+However, you may already have an external air pump or a compressor that you can use as an air assist.
+While you could operate it manually, it would be more convenient to have it turn on and off automatically with the laser, just like the original one.
+
+This project aims to create an automatic air assist with an external air pump.
+
+> ⚠️⚠️⚠️
+> 
+> This project assumes that your CNC has a motherboard with a 12 V / 0.6 A pin for the original air assist.
+>
+> Before proceeding, please:
+>
+> * Check your CNC's specifications to make sure it has the same pin.
+> * Measure the voltage of the pin to confirm it's output.
+> * If your CNC does not have the same pin or its voltage is different, you will need to adapt the scheme or you may not be able to use it at all.
+>
+> Always follow the common sense and safety rules.
+> Project authors and contributors are not responsible for any damage or injury caused by this project.
+>
+> We're not going to speak about the laser hazards here, as you must already know (and follow) them if you're reading this.
+>
+> ⚠️⚡💥👀🤕😫🏥🦽
+
+== Checking your CNC
+== Circuit diagram 
+== BOM
+== Making a PCB
+== Making a case
