@@ -3,11 +3,11 @@
 	(generator "eeschema")
 	(generator_version "8.0")
 	(uuid "8628b8e8-42cb-40cf-a08a-0a03c5b944b5")
-	(paper "A4")
+	(paper "A5" portrait)
 	(title_block
 		(title "Automatic Air Assist")
-		(date "2023-09-11")
-		(rev "1")
+		(date "2024-03-08")
+		(rev "2")
 		(company "madhead")
 	)
 	(lib_symbols
@@ -803,46 +803,24 @@
 		)
 	)
 	(junction
-		(at 151.13 100.33)
+		(at 81.28 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2dc186d5-174e-4cd0-b806-90fa1cd8aa5a")
 	)
 	(junction
-		(at 172.72 100.33)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "463b08cd-67fe-4f92-a73a-e0cff8731136")
-	)
-	(junction
-		(at 168.91 68.58)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "67b00f5b-5b57-4a0e-950d-14ff40511efd")
-	)
-	(junction
-		(at 135.89 100.33)
+		(at 66.04 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9e09dc67-8381-48bb-8b52-9ab426904a01")
 	)
 	(no_connect
-		(at 151.13 113.03)
+		(at 81.28 99.06)
 		(uuid "bb25b76a-924f-497d-a6b1-02541a965a5e")
 	)
 	(wire
 		(pts
-			(xy 168.91 97.79) (xy 168.91 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "02b55665-c7c8-4fdf-82f8-9e04e02c5a44")
-	)
-	(wire
-		(pts
-			(xy 138.43 91.44) (xy 135.89 91.44)
+			(xy 68.58 77.47) (xy 66.04 77.47)
 		)
 		(stroke
 			(width 0)
@@ -852,7 +830,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 120.65) (xy 151.13 137.16)
+			(xy 81.28 106.68) (xy 81.28 123.19)
 		)
 		(stroke
 			(width 0)
@@ -862,7 +840,17 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 91.44) (xy 135.89 100.33)
+			(xy 50.8 86.36) (xy 66.04 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "271190ed-dd43-4833-a51b-2b428756bfff")
+	)
+	(wire
+		(pts
+			(xy 66.04 77.47) (xy 66.04 86.36)
 		)
 		(stroke
 			(width 0)
@@ -872,17 +860,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 100.33) (xy 172.72 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "332b3c19-dc82-44c4-b412-703d5545dcf4")
-	)
-	(wire
-		(pts
-			(xy 151.13 137.16) (xy 144.78 137.16)
+			(xy 81.28 123.19) (xy 74.93 123.19)
 		)
 		(stroke
 			(width 0)
@@ -892,7 +870,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 100.33) (xy 151.13 100.33)
+			(xy 96.52 86.36) (xy 81.28 86.36)
 		)
 		(stroke
 			(width 0)
@@ -902,27 +880,27 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 71.12) (xy 172.72 71.12)
+			(xy 50.8 60.96) (xy 50.8 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "60646ade-8039-4173-8ac4-1379bd203024")
+		(uuid "5f8303f8-9c6a-498c-a380-48532a57c461")
 	)
 	(wire
 		(pts
-			(xy 107.95 100.33) (xy 135.89 100.33)
+			(xy 96.52 60.96) (xy 96.52 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6b0fb0b6-5e81-4f77-a252-f7fdc3be44a2")
+		(uuid "79f3665d-f439-42e9-b95f-515bacf7ed21")
 	)
 	(wire
 		(pts
-			(xy 135.89 100.33) (xy 135.89 110.49)
+			(xy 66.04 86.36) (xy 66.04 96.52)
 		)
 		(stroke
 			(width 0)
@@ -932,7 +910,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 137.16) (xy 142.24 137.16)
+			(xy 66.04 123.19) (xy 72.39 123.19)
 		)
 		(stroke
 			(width 0)
@@ -942,7 +920,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 100.33) (xy 151.13 107.95)
+			(xy 81.28 86.36) (xy 81.28 93.98)
 		)
 		(stroke
 			(width 0)
@@ -952,17 +930,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 68.58) (xy 107.95 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "92222ed6-1d64-4da4-b98f-c87a29b3ff82")
-	)
-	(wire
-		(pts
-			(xy 168.91 68.58) (xy 176.53 68.58)
+			(xy 50.8 60.96) (xy 96.52 60.96)
 		)
 		(stroke
 			(width 0)
@@ -972,7 +940,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 91.44) (xy 151.13 100.33)
+			(xy 81.28 77.47) (xy 81.28 86.36)
 		)
 		(stroke
 			(width 0)
@@ -982,27 +950,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 97.79) (xy 168.91 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a340cdf9-fa91-4ef0-9957-fe013ea700ca")
-	)
-	(wire
-		(pts
-			(xy 107.95 68.58) (xy 168.91 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "db8a503a-8ef5-4228-872e-b1905f6fc309")
-	)
-	(wire
-		(pts
-			(xy 135.89 120.65) (xy 135.89 137.16)
+			(xy 66.04 106.68) (xy 66.04 123.19)
 		)
 		(stroke
 			(width 0)
@@ -1012,7 +960,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 91.44) (xy 151.13 91.44)
+			(xy 78.74 77.47) (xy 81.28 77.47)
 		)
 		(stroke
 			(width 0)
@@ -1022,7 +970,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 85.09) (xy 107.95 100.33)
+			(xy 50.8 74.93) (xy 50.8 86.36)
 		)
 		(stroke
 			(width 0)
@@ -1032,7 +980,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 71.12) (xy 172.72 100.33)
+			(xy 96.52 74.93) (xy 96.52 86.36)
 		)
 		(stroke
 			(width 0)
@@ -1043,7 +991,7 @@
 	(netclass_flag ""
 		(length 2.54)
 		(shape round)
-		(at 135.89 133.35 90)
+		(at 66.04 119.38 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1053,7 +1001,7 @@
 		)
 		(uuid "062c2bc7-7724-4cf2-aea8-9e49d96a6afd")
 		(property "Netclass" "Control"
-			(at 133.35 132.6515 90)
+			(at 63.5 118.6815 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1066,8 +1014,7 @@
 	(netclass_flag ""
 		(length 2.54)
 		(shape round)
-		(at 118.11 100.33 180)
-		(fields_autoplaced yes)
+		(at 58.42 86.36 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1076,7 +1023,7 @@
 		)
 		(uuid "4b4705c8-37bb-4b35-a382-37a65e828815")
 		(property "Netclass" "Power"
-			(at 118.8085 102.87 0)
+			(at 55.5182 90.3443 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1089,7 +1036,7 @@
 	(netclass_flag ""
 		(length 2.54)
 		(shape round)
-		(at 151.13 133.35 270)
+		(at 81.28 119.38 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1099,7 +1046,7 @@
 		)
 		(uuid "548d60ce-34be-4485-be0f-6b5fbcf11429")
 		(property "Netclass" "Control"
-			(at 153.67 132.6515 90)
+			(at 83.82 118.6815 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1112,8 +1059,7 @@
 	(netclass_flag ""
 		(length 2.54)
 		(shape round)
-		(at 158.75 100.33 180)
-		(fields_autoplaced yes)
+		(at 88.9 86.36 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1122,7 +1068,7 @@
 		)
 		(uuid "58b24738-b2b9-4f79-adb9-072c1c2e24c9")
 		(property "Netclass" "Power"
-			(at 159.4485 102.87 0)
+			(at 85.9896 90.4171 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1135,7 +1081,7 @@
 	(netclass_flag ""
 		(length 2.54)
 		(shape round)
-		(at 143.51 68.58 0)
+		(at 73.66 60.96 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1145,7 +1091,7 @@
 		)
 		(uuid "7350baa9-d4cc-4480-b13c-67ae68d6f98c")
 		(property "Netclass" "Power"
-			(at 144.2085 66.04 0)
+			(at 74.3585 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1157,16 +1103,15 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_SPST")
-		(at 143.51 91.44 0)
+		(at 73.66 77.47 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "192043b8-65d4-48fa-a524-a3e354f53260")
 		(property "Reference" "S1"
-			(at 143.51 85.09 0)
+			(at 73.66 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1174,7 +1119,7 @@
 			)
 		)
 		(property "Value" "Manual"
-			(at 143.51 87.63 0)
+			(at 73.66 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1182,7 +1127,7 @@
 			)
 		)
 		(property "Footprint" "TerminalBlock:TerminalBlock_bornier-2_P5.08mm"
-			(at 143.51 91.44 0)
+			(at 73.66 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1191,7 +1136,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 143.51 91.44 0)
+			(at 73.66 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1200,7 +1145,7 @@
 			)
 		)
 		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 143.51 91.44 0)
+			(at 73.66 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1225,16 +1170,17 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 102.87 82.55 0)
+		(at 45.72 72.39 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "4e8638d7-c4b1-4c5b-9e6d-77ef14465bae")
 		(property "Reference" "J1"
-			(at 100.33 82.55 0)
+			(at 43.18 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1243,7 +1189,7 @@
 			)
 		)
 		(property "Value" "Input"
-			(at 100.33 85.09 0)
+			(at 43.18 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1252,7 +1198,7 @@
 			)
 		)
 		(property "Footprint" "TerminalBlock:TerminalBlock_bornier-2_P5.08mm"
-			(at 102.87 82.55 0)
+			(at 45.72 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1261,7 +1207,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2303171000_Cixi-Kefa-Elec-KF301-5-0-2P_C474881.pdf"
-			(at 102.87 82.55 0)
+			(at 45.72 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1270,7 +1216,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 102.87 82.55 0)
+			(at 45.72 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1295,7 +1241,7 @@
 	)
 	(symbol
 		(lib_id "Relay:SANYOU_SRD_Form_C")
-		(at 143.51 115.57 270)
+		(at 73.66 101.6 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1304,7 +1250,7 @@
 		(dnp no)
 		(uuid "79926127-9fb3-49a1-99f5-7d1686bbe8ed")
 		(property "Reference" "K1"
-			(at 143.51 100.33 90)
+			(at 73.66 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1312,7 +1258,7 @@
 			)
 		)
 		(property "Value" "Auto"
-			(at 143.51 102.87 90)
+			(at 73.66 88.9 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1320,7 +1266,7 @@
 			)
 		)
 		(property "Footprint" "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C"
-			(at 142.24 104.14 0)
+			(at 72.39 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1330,7 +1276,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf"
-			(at 143.51 115.57 0)
+			(at 73.66 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1339,7 +1285,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 143.51 115.57 0)
+			(at 73.66 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1373,7 +1319,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 144.78 142.24 270)
+		(at 74.93 128.27 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1381,7 +1327,7 @@
 		(dnp no)
 		(uuid "812d0ac9-e166-4862-9bc1-d78c5263b199")
 		(property "Reference" "J2"
-			(at 143.51 146.05 90)
+			(at 73.66 132.08 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1390,7 +1336,7 @@
 			)
 		)
 		(property "Value" "Control"
-			(at 143.51 148.59 90)
+			(at 73.66 134.62 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1399,7 +1345,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
-			(at 144.78 142.24 0)
+			(at 74.93 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1408,7 +1354,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2304140030_JST-Sales-America-B2B-XH-A-LF-SN_C158012.pdf"
-			(at 144.78 142.24 0)
+			(at 74.93 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1417,7 +1363,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 144.78 142.24 0)
+			(at 74.93 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1442,7 +1388,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 181.61 68.58 0)
+		(at 101.6 72.39 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1450,7 +1396,7 @@
 		(dnp no)
 		(uuid "c05d74da-4382-48e4-8e23-f70beb6e6112")
 		(property "Reference" "J3"
-			(at 184.15 68.58 0)
+			(at 104.14 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1458,8 +1404,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Pump"
-			(at 184.15 71.12 0)
+		(property "Value" "Output"
+			(at 104.14 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1468,7 +1414,7 @@
 			)
 		)
 		(property "Footprint" "TerminalBlock:TerminalBlock_bornier-2_P5.08mm"
-			(at 181.61 68.58 0)
+			(at 101.6 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1477,7 +1423,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2303171000_Cixi-Kefa-Elec-KF301-5-0-2P_C474881.pdf"
-			(at 181.61 68.58 0)
+			(at 101.6 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1486,7 +1432,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 181.61 68.58 0)
+			(at 101.6 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1504,75 +1450,6 @@
 			(project "controller"
 				(path "/8628b8e8-42cb-40cf-a08a-0a03c5b944b5"
 					(reference "J3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 180.34 97.79 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "eea87fe3-d9bf-4279-88bc-50c59e3cabde")
-		(property "Reference" "J4"
-			(at 182.88 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Fan"
-			(at 182.88 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TerminalBlock:TerminalBlock_bornier-2_P5.08mm"
-			(at 180.34 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2303171000_Cixi-Kefa-Elec-KF301-5-0-2P_C474881.pdf"
-			(at 180.34 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 180.34 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0603fb9d-e61a-49d2-b5bc-ccf9ec099948")
-		)
-		(pin "2"
-			(uuid "1d197d84-3886-4f05-a03b-af79d38c7e06")
-		)
-		(instances
-			(project "controller"
-				(path "/8628b8e8-42cb-40cf-a08a-0a03c5b944b5"
-					(reference "J4")
 					(unit 1)
 				)
 			)
