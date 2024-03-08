@@ -1,702 +1,1586 @@
-(kicad_sch (version 20230121) (generator eeschema)
-
-  (uuid 8628b8e8-42cb-40cf-a08a-0a03c5b944b5)
-
-  (paper "A4")
-
-  (title_block
-    (title "Automatic Air Assist")
-    (date "2023-09-11")
-    (rev "1")
-    (company "madhead")
-  )
-
-  (lib_symbols
-    (symbol "Connector:Screw_Terminal_01x02" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "J" (at 0 2.54 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "Screw_Terminal_01x02" (at 0 -5.08 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "screw terminal" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "TerminalBlock*:*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "Screw_Terminal_01x02_1_1"
-        (rectangle (start -1.27 1.27) (end 1.27 -3.81)
-          (stroke (width 0.254) (type default))
-          (fill (type background))
-        )
-        (circle (center 0 -2.54) (radius 0.635)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -0.5334 -2.2098)
-            (xy 0.3302 -3.048)
-          )
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -0.5334 0.3302)
-            (xy 0.3302 -0.508)
-          )
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -0.3556 -2.032)
-            (xy 0.508 -2.8702)
-          )
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -0.3556 0.508)
-            (xy 0.508 -0.3302)
-          )
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (circle (center 0 0) (radius 0.635)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (pin passive line (at -5.08 0 0) (length 3.81)
-          (name "Pin_1" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -5.08 -2.54 0) (length 3.81)
-          (name "Pin_2" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Connector_Generic:Conn_01x02" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "J" (at 0 2.54 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "Conn_01x02" (at 0 -5.08 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "connector" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "Conn_01x02_1_1"
-        (rectangle (start -1.27 -2.413) (end 0 -2.667)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start -1.27 0.127) (end 0 -0.127)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start -1.27 1.27) (end 1.27 -3.81)
-          (stroke (width 0.254) (type default))
-          (fill (type background))
-        )
-        (pin passive line (at -5.08 0 0) (length 3.81)
-          (name "Pin_1" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -5.08 -2.54 0) (length 3.81)
-          (name "Pin_2" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Relay:SANYOU_SRD_Form_C" (in_bom yes) (on_board yes)
-      (property "Reference" "K" (at 11.43 3.81 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Value" "SANYOU_SRD_Form_C" (at 11.43 1.27 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Footprint" "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" (at 11.43 -1.27 0)
-        (effects (font (size 1.27 1.27)) (justify left) hide)
-      )
-      (property "Datasheet" "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "Single Pole Relay SPDT" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Sanyo SRD relay, Single Pole Miniature Power Relay," (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "Relay*SPDT*SANYOU*SRD*Series*Form*C*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "SANYOU_SRD_Form_C_0_0"
-        (polyline
-          (pts
-            (xy 7.62 5.08)
-            (xy 7.62 2.54)
-            (xy 6.985 3.175)
-            (xy 7.62 3.81)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "SANYOU_SRD_Form_C_0_1"
-        (rectangle (start -10.16 5.08) (end 10.16 -5.08)
-          (stroke (width 0.254) (type default))
-          (fill (type background))
-        )
-        (rectangle (start -8.255 1.905) (end -1.905 -1.905)
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -7.62 -1.905)
-            (xy -2.54 1.905)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -5.08 -5.08)
-            (xy -5.08 -1.905)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -5.08 5.08)
-            (xy -5.08 1.905)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -1.905 0)
-            (xy -1.27 0)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -0.635 0)
-            (xy 0 0)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0.635 0)
-            (xy 1.27 0)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.905 0)
-            (xy 2.54 0)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 3.175 0)
-            (xy 3.81 0)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 5.08 -2.54)
-            (xy 3.175 3.81)
-          )
-          (stroke (width 0.508) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 5.08 -2.54)
-            (xy 5.08 -5.08)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "SANYOU_SRD_Form_C_1_1"
-        (polyline
-          (pts
-            (xy 2.54 3.81)
-            (xy 3.175 3.175)
-            (xy 2.54 2.54)
-            (xy 2.54 5.08)
-          )
-          (stroke (width 0) (type default))
-          (fill (type outline))
-        )
-        (pin passive line (at 5.08 -7.62 90) (length 2.54)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -5.08 -7.62 90) (length 2.54)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 7.62 7.62 270) (length 2.54)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 2.54 7.62 270) (length 2.54)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "4" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -5.08 7.62 270) (length 2.54)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "5" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Switch:SW_DPST" (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "SW" (at 0 5.08 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "SW_DPST" (at 0 -5.08 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "switch dual double-pole single-throw OFF-ON" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Double Pole Single Throw (DPST) Switch" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "SW_DPST_0_0"
-        (circle (center -2.032 -2.54) (radius 0.508)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (circle (center -2.032 2.54) (radius 0.508)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -1.524 -2.286)
-            (xy 1.27 -1.016)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -1.524 2.794)
-            (xy 1.27 4.064)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 -1.27)
-            (xy 0 -0.635)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 0.635)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 1.27)
-            (xy 0 1.905)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 2.54)
-            (xy 0 3.175)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (circle (center 2.032 -2.54) (radius 0.508)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (circle (center 2.032 2.54) (radius 0.508)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "SW_DPST_1_1"
-        (pin passive line (at -5.08 -2.54 0) (length 2.54)
-          (name "1" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 5.08 -2.54 180) (length 2.54)
-          (name "2" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -5.08 2.54 0) (length 2.54)
-          (name "3" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 5.08 2.54 180) (length 2.54)
-          (name "4" (effects (font (size 1.27 1.27))))
-          (number "4" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-  )
-
-  (junction (at 151.13 100.33) (diameter 0) (color 0 0 0 0)
-    (uuid 2dc186d5-174e-4cd0-b806-90fa1cd8aa5a)
-  )
-  (junction (at 172.72 100.33) (diameter 0) (color 0 0 0 0)
-    (uuid 463b08cd-67fe-4f92-a73a-e0cff8731136)
-  )
-  (junction (at 168.91 68.58) (diameter 0) (color 0 0 0 0)
-    (uuid 67b00f5b-5b57-4a0e-950d-14ff40511efd)
-  )
-  (junction (at 135.89 100.33) (diameter 0) (color 0 0 0 0)
-    (uuid 9e09dc67-8381-48bb-8b52-9ab426904a01)
-  )
-
-  (no_connect (at 148.59 86.36) (uuid 11970e6d-de49-4dae-a249-50ebdc81950f))
-  (no_connect (at 151.13 113.03) (uuid bb25b76a-924f-497d-a6b1-02541a965a5e))
-  (no_connect (at 138.43 86.36) (uuid eceff0d2-4947-46e3-9f8e-62af75791b57))
-
-  (wire (pts (xy 168.91 97.79) (xy 168.91 68.58))
-    (stroke (width 0) (type default))
-    (uuid 02b55665-c7c8-4fdf-82f8-9e04e02c5a44)
-  )
-  (wire (pts (xy 138.43 91.44) (xy 135.89 91.44))
-    (stroke (width 0) (type default))
-    (uuid 11e4b109-8c06-46d7-9076-094a728fa4d2)
-  )
-  (wire (pts (xy 151.13 120.65) (xy 151.13 137.16))
-    (stroke (width 0) (type default))
-    (uuid 24d616a7-c25f-4230-973e-08f0741f45b6)
-  )
-  (wire (pts (xy 135.89 91.44) (xy 135.89 100.33))
-    (stroke (width 0) (type default))
-    (uuid 2df2dd1c-12d0-4159-b5ec-db9cd203030d)
-  )
-  (wire (pts (xy 175.26 100.33) (xy 172.72 100.33))
-    (stroke (width 0) (type default))
-    (uuid 332b3c19-dc82-44c4-b412-703d5545dcf4)
-  )
-  (wire (pts (xy 151.13 137.16) (xy 144.78 137.16))
-    (stroke (width 0) (type default))
-    (uuid 3959f4a1-034d-4c51-bbbb-d4a7a8367bd9)
-  )
-  (wire (pts (xy 172.72 100.33) (xy 151.13 100.33))
-    (stroke (width 0) (type default))
-    (uuid 3b6cc62d-9e4b-4628-b1c9-6706207c9e77)
-  )
-  (wire (pts (xy 176.53 71.12) (xy 172.72 71.12))
-    (stroke (width 0) (type default))
-    (uuid 60646ade-8039-4173-8ac4-1379bd203024)
-  )
-  (wire (pts (xy 107.95 100.33) (xy 135.89 100.33))
-    (stroke (width 0) (type default))
-    (uuid 6b0fb0b6-5e81-4f77-a252-f7fdc3be44a2)
-  )
-  (wire (pts (xy 135.89 100.33) (xy 135.89 110.49))
-    (stroke (width 0) (type default))
-    (uuid 7d02df12-2fc2-49f6-8404-382bbd8d259a)
-  )
-  (wire (pts (xy 135.89 137.16) (xy 142.24 137.16))
-    (stroke (width 0) (type default))
-    (uuid 810a5dc7-3d46-4002-b373-9797e123d141)
-  )
-  (wire (pts (xy 151.13 100.33) (xy 151.13 107.95))
-    (stroke (width 0) (type default))
-    (uuid 8c0d0ac0-c340-495f-9234-1efcbbc418c2)
-  )
-  (wire (pts (xy 107.95 68.58) (xy 107.95 82.55))
-    (stroke (width 0) (type default))
-    (uuid 92222ed6-1d64-4da4-b98f-c87a29b3ff82)
-  )
-  (wire (pts (xy 168.91 68.58) (xy 176.53 68.58))
-    (stroke (width 0) (type default))
-    (uuid 93e0a2fa-2aad-41eb-b7b2-7cd5d91970a8)
-  )
-  (wire (pts (xy 151.13 91.44) (xy 151.13 100.33))
-    (stroke (width 0) (type default))
-    (uuid 99d7d8cb-22a5-462e-bab2-2545d5f3e2fc)
-  )
-  (wire (pts (xy 175.26 97.79) (xy 168.91 97.79))
-    (stroke (width 0) (type default))
-    (uuid a340cdf9-fa91-4ef0-9957-fe013ea700ca)
-  )
-  (wire (pts (xy 107.95 68.58) (xy 168.91 68.58))
-    (stroke (width 0) (type default))
-    (uuid db8a503a-8ef5-4228-872e-b1905f6fc309)
-  )
-  (wire (pts (xy 135.89 120.65) (xy 135.89 137.16))
-    (stroke (width 0) (type default))
-    (uuid df6ac16d-caea-40fa-a651-9ccb35553032)
-  )
-  (wire (pts (xy 148.59 91.44) (xy 151.13 91.44))
-    (stroke (width 0) (type default))
-    (uuid ebc9c92e-e411-455d-842b-eb4075b01496)
-  )
-  (wire (pts (xy 107.95 85.09) (xy 107.95 100.33))
-    (stroke (width 0) (type default))
-    (uuid f467bc11-b26f-4073-9c0c-c4d9072ea565)
-  )
-  (wire (pts (xy 172.72 71.12) (xy 172.72 100.33))
-    (stroke (width 0) (type default))
-    (uuid fe02256d-e56f-464f-ac77-e615ebe85237)
-  )
-
-  (netclass_flag "" (length 2.54) (shape round) (at 135.89 133.35 90) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 062c2bc7-7724-4cf2-aea8-9e49d96a6afd)
-    (property "Netclass" "Control" (at 133.35 132.6515 90)
-      (effects (font (size 1.27 1.27) italic) (justify left))
-    )
-  )
-  (netclass_flag "" (length 2.54) (shape round) (at 118.11 100.33 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 4b4705c8-37bb-4b35-a382-37a65e828815)
-    (property "Netclass" "Power" (at 118.8085 102.87 0)
-      (effects (font (size 1.27 1.27) italic) (justify left))
-    )
-  )
-  (netclass_flag "" (length 2.54) (shape round) (at 151.13 133.35 270) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 548d60ce-34be-4485-be0f-6b5fbcf11429)
-    (property "Netclass" "Control" (at 153.67 132.6515 90)
-      (effects (font (size 1.27 1.27) italic) (justify left))
-    )
-  )
-  (netclass_flag "" (length 2.54) (shape round) (at 158.75 100.33 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 58b24738-b2b9-4f79-adb9-072c1c2e24c9)
-    (property "Netclass" "Power" (at 159.4485 102.87 0)
-      (effects (font (size 1.27 1.27) italic) (justify left))
-    )
-  )
-  (netclass_flag "" (length 2.54) (shape round) (at 143.51 68.58 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 7350baa9-d4cc-4480-b13c-67ae68d6f98c)
-    (property "Netclass" "Power" (at 144.2085 66.04 0)
-      (effects (font (size 1.27 1.27) italic) (justify left))
-    )
-  )
-
-  (symbol (lib_id "Switch:SW_DPST") (at 143.51 88.9 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 192043b8-65d4-48fa-a524-a3e354f53260)
-    (property "Reference" "S1" (at 143.51 80.01 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "Manual" (at 143.51 82.55 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" (at 143.51 88.9 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://datasheet.lcsc.com/lcsc/2305061706_SHOU-HAN-KCD4-4P-G_C5884423.pdf" (at 143.51 88.9 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid c76e42a6-6d89-4343-aba6-024b131d054d))
-    (pin "2" (uuid 509a15e1-8472-417e-9471-302ca5e93be0))
-    (pin "3" (uuid 63e284d8-2093-4389-a38d-619b9c5fdf15))
-    (pin "4" (uuid 073fa2f6-9e22-4fb6-b8e1-8a1d646d211b))
-    (instances
-      (project "controller"
-        (path "/8628b8e8-42cb-40cf-a08a-0a03c5b944b5"
-          (reference "S1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector:Screw_Terminal_01x02") (at 102.87 82.55 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 4e8638d7-c4b1-4c5b-9e6d-77ef14465bae)
-    (property "Reference" "J1" (at 100.33 82.55 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "Input" (at 100.33 85.09 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" (at 102.87 82.55 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://datasheet.lcsc.com/lcsc/2303171000_Cixi-Kefa-Elec-KF301-5-0-2P_C474881.pdf" (at 102.87 82.55 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid ad343673-8e97-4196-9ae2-25e6d104f80e))
-    (pin "2" (uuid 200808eb-b7f2-45f4-94cd-663e4fbf4cc8))
-    (instances
-      (project "controller"
-        (path "/8628b8e8-42cb-40cf-a08a-0a03c5b944b5"
-          (reference "J1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Relay:SANYOU_SRD_Form_C") (at 143.51 115.57 270) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 79926127-9fb3-49a1-99f5-7d1686bbe8ed)
-    (property "Reference" "K1" (at 143.51 100.33 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "Auto" (at 143.51 102.87 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" (at 142.24 104.14 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Datasheet" "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" (at 143.51 115.57 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 6a5579be-31e6-4866-b3f6-e4177756bfff))
-    (pin "2" (uuid f33767de-4df5-490f-bcaf-8098e122b655))
-    (pin "3" (uuid c6b91096-f6b5-4742-8c3a-5b95dc547b38))
-    (pin "4" (uuid 2cd49850-0d0e-4fa1-837f-67e8226ef5ae))
-    (pin "5" (uuid 64322e6b-ea42-4ef5-ac66-91eef6dfb6ab))
-    (instances
-      (project "controller"
-        (path "/8628b8e8-42cb-40cf-a08a-0a03c5b944b5"
-          (reference "K1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector_Generic:Conn_01x02") (at 144.78 142.24 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 812d0ac9-e166-4862-9bc1-d78c5263b199)
-    (property "Reference" "J2" (at 143.51 146.05 90)
-      (effects (font (size 1.27 1.27)) (justify bottom))
-    )
-    (property "Value" "Control" (at 143.51 148.59 90)
-      (effects (font (size 1.27 1.27)) (justify bottom))
-    )
-    (property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" (at 144.78 142.24 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://datasheet.lcsc.com/lcsc/2304140030_JST-Sales-America-B2B-XH-A-LF-SN_C158012.pdf" (at 144.78 142.24 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid c12002e7-0095-47e4-8a7a-70e68b33fc76))
-    (pin "2" (uuid 8dedd103-2291-45ee-80db-55296d3921bd))
-    (instances
-      (project "controller"
-        (path "/8628b8e8-42cb-40cf-a08a-0a03c5b944b5"
-          (reference "J2") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector:Screw_Terminal_01x02") (at 181.61 68.58 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid c05d74da-4382-48e4-8e23-f70beb6e6112)
-    (property "Reference" "J3" (at 184.15 68.58 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "Pump" (at 184.15 71.12 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" (at 181.61 68.58 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://datasheet.lcsc.com/lcsc/2303171000_Cixi-Kefa-Elec-KF301-5-0-2P_C474881.pdf" (at 181.61 68.58 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 9d630ec2-67cd-4f4c-be8d-08e77d40ff92))
-    (pin "2" (uuid 689eb254-7acf-409e-8840-194bf15f7b4a))
-    (instances
-      (project "controller"
-        (path "/8628b8e8-42cb-40cf-a08a-0a03c5b944b5"
-          (reference "J3") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector:Screw_Terminal_01x02") (at 180.34 97.79 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid eea87fe3-d9bf-4279-88bc-50c59e3cabde)
-    (property "Reference" "J4" (at 182.88 97.79 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "Fan" (at 182.88 100.33 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" (at 180.34 97.79 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://datasheet.lcsc.com/lcsc/2303171000_Cixi-Kefa-Elec-KF301-5-0-2P_C474881.pdf" (at 180.34 97.79 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 0603fb9d-e61a-49d2-b5bc-ccf9ec099948))
-    (pin "2" (uuid 1d197d84-3886-4f05-a03b-af79d38c7e06))
-    (instances
-      (project "controller"
-        (path "/8628b8e8-42cb-40cf-a08a-0a03c5b944b5"
-          (reference "J4") (unit 1)
-        )
-      )
-    )
-  )
-
-  (sheet_instances
-    (path "/" (page "1"))
-  )
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "8628b8e8-42cb-40cf-a08a-0a03c5b944b5")
+	(paper "A4")
+	(title_block
+		(title "Automatic Air Assist")
+		(date "2023-09-11")
+		(rev "1")
+		(company "madhead")
+	)
+	(lib_symbols
+		(symbol "Connector:Screw_Terminal_01x02"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Screw_Terminal_01x02"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "screw terminal"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TerminalBlock*:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Screw_Terminal_01x02_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(circle
+					(center 0 -2.54)
+					(radius 0.635)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.5334 -2.2098) (xy 0.3302 -3.048)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.5334 0.3302) (xy 0.3302 -0.508)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.3556 -2.032) (xy 0.508 -2.8702)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.3556 0.508) (xy 0.508 -0.3302)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 0.635)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Connector_Generic:Conn_01x02"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x02_1_1"
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Relay:SANYOU_SRD_Form_C"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "K"
+				(at 11.43 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SANYOU_SRD_Form_C"
+				(at 11.43 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C"
+				(at 11.43 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Sanyo SRD relay, Single Pole Miniature Power Relay,"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Single Pole Relay SPDT"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Relay*SPDT*SANYOU*SRD*Series*Form*C*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SANYOU_SRD_Form_C_0_0"
+				(polyline
+					(pts
+						(xy 7.62 5.08) (xy 7.62 2.54) (xy 6.985 3.175) (xy 7.62 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SANYOU_SRD_Form_C_0_1"
+				(rectangle
+					(start -10.16 5.08)
+					(end 10.16 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -8.255 1.905)
+					(end -1.905 -1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -7.62 -1.905) (xy -2.54 1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -5.08) (xy -5.08 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 5.08) (xy -5.08 1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.635 0) (xy 0 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 0) (xy 2.54 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.175 0) (xy 3.81 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 -2.54) (xy 3.175 3.81)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 -2.54) (xy 5.08 -5.08)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SANYOU_SRD_Form_C_1_1"
+				(polyline
+					(pts
+						(xy 2.54 3.81) (xy 3.175 3.175) (xy 2.54 2.54) (xy 2.54 5.08)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(pin passive line
+					(at 5.08 -7.62 90)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -7.62 90)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 7.62 270)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 7.62 270)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 7.62 270)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Switch:SW_SPST"
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SW_SPST"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Single Pole Single Throw (SPST) switch"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch lever"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_SPST_0_0"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 0.254) (xy 1.524 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SW_SPST_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 151.13 100.33)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2dc186d5-174e-4cd0-b806-90fa1cd8aa5a")
+	)
+	(junction
+		(at 172.72 100.33)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "463b08cd-67fe-4f92-a73a-e0cff8731136")
+	)
+	(junction
+		(at 168.91 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "67b00f5b-5b57-4a0e-950d-14ff40511efd")
+	)
+	(junction
+		(at 135.89 100.33)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9e09dc67-8381-48bb-8b52-9ab426904a01")
+	)
+	(no_connect
+		(at 151.13 113.03)
+		(uuid "bb25b76a-924f-497d-a6b1-02541a965a5e")
+	)
+	(wire
+		(pts
+			(xy 168.91 97.79) (xy 168.91 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02b55665-c7c8-4fdf-82f8-9e04e02c5a44")
+	)
+	(wire
+		(pts
+			(xy 138.43 91.44) (xy 135.89 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11e4b109-8c06-46d7-9076-094a728fa4d2")
+	)
+	(wire
+		(pts
+			(xy 151.13 120.65) (xy 151.13 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24d616a7-c25f-4230-973e-08f0741f45b6")
+	)
+	(wire
+		(pts
+			(xy 135.89 91.44) (xy 135.89 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2df2dd1c-12d0-4159-b5ec-db9cd203030d")
+	)
+	(wire
+		(pts
+			(xy 175.26 100.33) (xy 172.72 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "332b3c19-dc82-44c4-b412-703d5545dcf4")
+	)
+	(wire
+		(pts
+			(xy 151.13 137.16) (xy 144.78 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3959f4a1-034d-4c51-bbbb-d4a7a8367bd9")
+	)
+	(wire
+		(pts
+			(xy 172.72 100.33) (xy 151.13 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b6cc62d-9e4b-4628-b1c9-6706207c9e77")
+	)
+	(wire
+		(pts
+			(xy 176.53 71.12) (xy 172.72 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60646ade-8039-4173-8ac4-1379bd203024")
+	)
+	(wire
+		(pts
+			(xy 107.95 100.33) (xy 135.89 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b0fb0b6-5e81-4f77-a252-f7fdc3be44a2")
+	)
+	(wire
+		(pts
+			(xy 135.89 100.33) (xy 135.89 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d02df12-2fc2-49f6-8404-382bbd8d259a")
+	)
+	(wire
+		(pts
+			(xy 135.89 137.16) (xy 142.24 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "810a5dc7-3d46-4002-b373-9797e123d141")
+	)
+	(wire
+		(pts
+			(xy 151.13 100.33) (xy 151.13 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c0d0ac0-c340-495f-9234-1efcbbc418c2")
+	)
+	(wire
+		(pts
+			(xy 107.95 68.58) (xy 107.95 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92222ed6-1d64-4da4-b98f-c87a29b3ff82")
+	)
+	(wire
+		(pts
+			(xy 168.91 68.58) (xy 176.53 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93e0a2fa-2aad-41eb-b7b2-7cd5d91970a8")
+	)
+	(wire
+		(pts
+			(xy 151.13 91.44) (xy 151.13 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99d7d8cb-22a5-462e-bab2-2545d5f3e2fc")
+	)
+	(wire
+		(pts
+			(xy 175.26 97.79) (xy 168.91 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a340cdf9-fa91-4ef0-9957-fe013ea700ca")
+	)
+	(wire
+		(pts
+			(xy 107.95 68.58) (xy 168.91 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db8a503a-8ef5-4228-872e-b1905f6fc309")
+	)
+	(wire
+		(pts
+			(xy 135.89 120.65) (xy 135.89 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df6ac16d-caea-40fa-a651-9ccb35553032")
+	)
+	(wire
+		(pts
+			(xy 148.59 91.44) (xy 151.13 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ebc9c92e-e411-455d-842b-eb4075b01496")
+	)
+	(wire
+		(pts
+			(xy 107.95 85.09) (xy 107.95 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f467bc11-b26f-4073-9c0c-c4d9072ea565")
+	)
+	(wire
+		(pts
+			(xy 172.72 71.12) (xy 172.72 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe02256d-e56f-464f-ac77-e615ebe85237")
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 135.89 133.35 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "062c2bc7-7724-4cf2-aea8-9e49d96a6afd")
+		(property "Netclass" "Control"
+			(at 133.35 132.6515 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 118.11 100.33 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4b4705c8-37bb-4b35-a382-37a65e828815")
+		(property "Netclass" "Power"
+			(at 118.8085 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 151.13 133.35 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "548d60ce-34be-4485-be0f-6b5fbcf11429")
+		(property "Netclass" "Control"
+			(at 153.67 132.6515 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 158.75 100.33 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "58b24738-b2b9-4f79-adb9-072c1c2e24c9")
+		(property "Netclass" "Power"
+			(at 159.4485 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 143.51 68.58 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7350baa9-d4cc-4480-b13c-67ae68d6f98c")
+		(property "Netclass" "Power"
+			(at 144.2085 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 143.51 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "192043b8-65d4-48fa-a524-a3e354f53260")
+		(property "Reference" "S1"
+			(at 143.51 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Manual"
+			(at 143.51 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TerminalBlock:TerminalBlock_bornier-2_P5.08mm"
+			(at 143.51 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 143.51 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single Pole Single Throw (SPST) switch"
+			(at 143.51 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c76e42a6-6d89-4343-aba6-024b131d054d")
+		)
+		(pin "2"
+			(uuid "509a15e1-8472-417e-9471-302ca5e93be0")
+		)
+		(instances
+			(project "controller"
+				(path "/8628b8e8-42cb-40cf-a08a-0a03c5b944b5"
+					(reference "S1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Screw_Terminal_01x02")
+		(at 102.87 82.55 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4e8638d7-c4b1-4c5b-9e6d-77ef14465bae")
+		(property "Reference" "J1"
+			(at 100.33 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Input"
+			(at 100.33 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TerminalBlock:TerminalBlock_bornier-2_P5.08mm"
+			(at 102.87 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2303171000_Cixi-Kefa-Elec-KF301-5-0-2P_C474881.pdf"
+			(at 102.87 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 102.87 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ad343673-8e97-4196-9ae2-25e6d104f80e")
+		)
+		(pin "2"
+			(uuid "200808eb-b7f2-45f4-94cd-663e4fbf4cc8")
+		)
+		(instances
+			(project "controller"
+				(path "/8628b8e8-42cb-40cf-a08a-0a03c5b944b5"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Relay:SANYOU_SRD_Form_C")
+		(at 143.51 115.57 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "79926127-9fb3-49a1-99f5-7d1686bbe8ed")
+		(property "Reference" "K1"
+			(at 143.51 100.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Auto"
+			(at 143.51 102.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C"
+			(at 142.24 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf"
+			(at 143.51 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 143.51 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6a5579be-31e6-4866-b3f6-e4177756bfff")
+		)
+		(pin "2"
+			(uuid "f33767de-4df5-490f-bcaf-8098e122b655")
+		)
+		(pin "3"
+			(uuid "c6b91096-f6b5-4742-8c3a-5b95dc547b38")
+		)
+		(pin "4"
+			(uuid "2cd49850-0d0e-4fa1-837f-67e8226ef5ae")
+		)
+		(pin "5"
+			(uuid "64322e6b-ea42-4ef5-ac66-91eef6dfb6ab")
+		)
+		(instances
+			(project "controller"
+				(path "/8628b8e8-42cb-40cf-a08a-0a03c5b944b5"
+					(reference "K1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 144.78 142.24 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "812d0ac9-e166-4862-9bc1-d78c5263b199")
+		(property "Reference" "J2"
+			(at 143.51 146.05 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Value" "Control"
+			(at 143.51 148.59 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
+			(at 144.78 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2304140030_JST-Sales-America-B2B-XH-A-LF-SN_C158012.pdf"
+			(at 144.78 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 144.78 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c12002e7-0095-47e4-8a7a-70e68b33fc76")
+		)
+		(pin "2"
+			(uuid "8dedd103-2291-45ee-80db-55296d3921bd")
+		)
+		(instances
+			(project "controller"
+				(path "/8628b8e8-42cb-40cf-a08a-0a03c5b944b5"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Screw_Terminal_01x02")
+		(at 181.61 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c05d74da-4382-48e4-8e23-f70beb6e6112")
+		(property "Reference" "J3"
+			(at 184.15 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Pump"
+			(at 184.15 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TerminalBlock:TerminalBlock_bornier-2_P5.08mm"
+			(at 181.61 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2303171000_Cixi-Kefa-Elec-KF301-5-0-2P_C474881.pdf"
+			(at 181.61 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 181.61 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9d630ec2-67cd-4f4c-be8d-08e77d40ff92")
+		)
+		(pin "2"
+			(uuid "689eb254-7acf-409e-8840-194bf15f7b4a")
+		)
+		(instances
+			(project "controller"
+				(path "/8628b8e8-42cb-40cf-a08a-0a03c5b944b5"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Screw_Terminal_01x02")
+		(at 180.34 97.79 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "eea87fe3-d9bf-4279-88bc-50c59e3cabde")
+		(property "Reference" "J4"
+			(at 182.88 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Fan"
+			(at 182.88 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TerminalBlock:TerminalBlock_bornier-2_P5.08mm"
+			(at 180.34 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2303171000_Cixi-Kefa-Elec-KF301-5-0-2P_C474881.pdf"
+			(at 180.34 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 180.34 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0603fb9d-e61a-49d2-b5bc-ccf9ec099948")
+		)
+		(pin "2"
+			(uuid "1d197d84-3886-4f05-a03b-af79d38c7e06")
+		)
+		(instances
+			(project "controller"
+				(path "/8628b8e8-42cb-40cf-a08a-0a03c5b944b5"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
 )
